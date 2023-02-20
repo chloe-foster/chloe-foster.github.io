@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html>
     <head>
-        <meta charset="utf-8">
+        <title>Chloe's IT161 Portal Website</title>
         <meta name="robots" content="noindex,nofollow">
-        <title>Mandated Landing Page Because I Don't Know</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/portal.css">
+        <link rel="stylesheet" href="css/nav.css">
     </head>
     <body>
-        <p>
-            Github wants an index.html as the landing page by default and I don't feel like fighting that, but the assignment wants an html file named test.html. 
-            To resolve this: <a href="/test.html">here's a link</a>
-        </p>
+        <header>
+            <h1>Chloe's IT161 Website</h1>
+            <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Welcome</a>
+            <a href="elements.html">HTML Elements</a>
+            <a href="aia.html">AIA</a>
+            <a href="big/index.html">BIG</a>
+            <a href="http://w3schools.com" target="_blank">W3 Schools</a>
+            <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
+            <a href="flowchart.html">Flowchart</a>
+            <a href="fp/index.html">Final Project</a>
+            <a href="contact.php">Contact Sara</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+            </nav>
+        </header>
+            
+        <div class="wrapper">
+            
+            <img class="desktop" src="images/t_i_r_e.png" alt="Sonic the Hedgehog staring at a tire">
+            
+            <img class="tablet" src="images/tablet.jpg" alt="Photo of an adorable GSD puppy">
+            
+            <img class="phone" src="images/phone.jpg" alt="Photo of an adorable but large GSD in the lap of his best buddy">
+            
+            <h2 class="subheader">About Me</h2>
+            
+            <p>Hello! My name is Chloe Foster, and this is my portal website.</p>
+            <p>I'm one of the programming subteam leads for Phoenix Force Robotics (FRC2097), and more or less primarily work on vision processing systems for the team.</p>
+            <p>In my free time outside school and robotics, I work on gamedev and a whole slew of personal projects.</p>
+            <p>I have anxiety and severe combined-type ADHD, and probably also other Mystery Things. That being said, I still try my best to get things done in a timely manner. If you want to contact me outside of an academic or work setting, your best bet is via Discord; my non-personal account's tag is [veryoriginalusername#4828].</p>
+            <p>On a less helpful but hopefully brighter note: if you want to ruin somebody's day, replace their semicolons with Greek question marks (;) and disable highlighting for it in their IDE.</p>
+
+            <footer>
+                <p>
+                    <small>
+                        Trans rights are human rights | © 2023 by 
+                        <a href="contact.php">Chloe Foster</a>, All Rights Reserved | 
+                        <a id="html-checker" href="https://validator.w3.org/nu/?doc=http://web-students.net/site48/it161/">Check HTML</a> | 
+                        <a id="css-checker" href="https://jigsaw.w3.org/css-validator/validator?uri=http://web-students.net/site48/it161/">Check CSS</a>
+                    </small>
+                </p>
+            </footer>
+        </div>
+            
+        <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+            
+        <script>
+        //https://tinyurl.com/dynamic-html-checker
+        document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+            
+        document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+
+        //manages mobile nav 
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }   
+        </script>
     </body>
+</html>
