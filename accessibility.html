@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chloe's IT161 Website - Accessibility</title>
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/portal.css">
+        <link rel="stylesheet" href="css/accessibility.css">
+    </head>
+    <body>
+        <header>
+            <h1>Chloe's IT161 Website</h1>
+            <nav class="topnav" id="myTopnav">
+            <a href="index.html">Welcome</a>
+            <a href="elements.html">HTML Elements</a>
+            <a href="accessibility.html" class="active">Accessibility</a>
+            <a href="aia.html">AIA</a>
+            <a href="big/index.html">BIG</a> 
+            <a href="http://w3schools.com" target="_blank">W3 Schools</a>
+            <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
+            <a href="flowchart.html">Flowchart</a>
+            <a href="fp/index.html">Final Project</a>
+            <a href="contact.php">Contact Chloe</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+            </nav>
+        </header>
+            
+        <div class="wrapper">
+            
+            <main>
+                <article>
+                    <h1 class="a11ytitle">Website Accessibility</h1>
+                    <p> 
+                        Even with legal protections such as the Rehabilitation Act of 1973 and the Americans with Disabilities Act of 1990 (ADA), keeping society accessible is a continuous struggle.
+                        <!--For instance, asking for accomodations at a place of work and getting rejected with an otherwise strong or even overqualified job application (for any type of disability), or fired shortly thereafter for supposedly unrelated reasons (for invisible disabilities, typically neurodivergence) is an incredibly common occurance - <strong>especially</strong> if you can't afford a lawyer to fight it.-->
+                        Doubly so on the internet, a place where accessibility regulations have only begun to reach. In hindsight, not accounting for this initially was a forgiveable mistake - at the time, 
+                        <strong>I'm pretty sure nobody predicted just how much the internet would revolutionize nearly every corner of modern life.</strong> <cite>(Sapega 2020)</cite> 
+                        But at this point, the internet has long since stopped being the hip new thing. There's not really any space left for excuses. 
+                        Even the law is coming around on the subject of internet accessibility - in 1996, the Department of Justice asserted that the ADA also extended to the internet. <cite>(Sapega 2020)</cite>
+                    </p>
+                    <!--<p>
+                        My ADHD and autism and whatnot have more damage than I'd like to quantify or admit, and strong deutan colorblindness makes distinguishing things far more difficult than it ever should be simply because it isn't accommodated for.
+                        I thought these inabilities made me inherently worthless. Completely prying myself away from that line of thinking is a practically impossible task thanks to how much society is set up to punish deviations from the norm, both explicitly and implicitly.
+                        And even then, as far as disabilities go I have it relatively light. Deaf/actually blind/etc. people also need to use the internet, and they have another set of needs; .
+                    </p>-->
+                    <p>
+                        <strong>Make the internet more accessible.</strong> At least, to the extent possible from your corner of the internet. How do you start?
+                    </p>
+                    <p>
+                        Some part of your userbase will be comprised of disabled people, so <strong>someone will always appreciate the 10 or so extra minutes you put into making a page accessible to satisfy legal requirements.</strong> 
+                        Work put into website accessibility isn't just going to be appreciated by those who need it, thanks to <strong>the curb-cut effect</strong> - changes made in the name of accessibility for one or a few groups make things better for everyone. <cite>(Blackwell 2017)</cite>
+                        <ul>
+                            <h3 class="a11ytitle">
+                                Straightforward changes to make:
+                            </h3>
+                            <aside><i>Note: this is not an exhaustive list.</i></aside>
+                            <li>
+                                People with cognitive disabilities, such as myself, need good color contrast, more easily parseable text, and relatively uncluttered web pages. <cite>(Burgstahler 2014)</cite> (I personally heavily rely on an open-source implementation of Bionic Reading for walls of text.)
+                                This also helps neurotypical people, who still benefit to a lesser extent from clearly-presented content.
+                            </li>
+                            <li>
+                                People who are blind need compatibility with screen reading software via use of semantical HTML tags <cite>(Burgstahler 2014)</cite>; 
+                                ensuring this also ensures that automated search engine crawlers can more easily parse the page and improve search ranking, too. <cite>(Mozilla 2023)</cite>
+                            </li>
+                            <li>
+                                People who are deaf need captions to understand anything involving audio. <cite>(Burgstahler 2014)</cite> 
+                                Captions, however, help virtually everyone, from people with audio processing difficulties to people who simply don't have a suitable audio output on hand. <cite>(Gernsbacher 2015)</cite>
+                            </li>
+                            <li>
+                                People with motor disabilities may not be able to use a mouse; websites must be fully and easily navigable using a keyboard alone. <cite>(Burgstahler 2014)</cite> 
+                                Properly implemented keyboard navigation, broadly speaking, is also faster than navigating via mouse, helping those who need to use your website quickly or frequently.
+                            </li>
+                        </ul>
+                    </p>
+                    <footer class="a11ylist">
+                        <h3 class="a11ytitle">
+                            Works Cited
+                        </h3>
+                        <p>
+                            Blackwell, A. G. (2017). The curb-cut effect (SSIR). Stanford Social Innovation Review: Informing and Inspiring Leaders of Social Change. Retrieved March 20, 2023, from https://ssir.org/articles/entry/the_curb_cut_effect <br>
+                            Burgstahler, S. (2014). Accessible web design. Accessible Web Design | DO-IT. Retrieved March 20, 2023, from https://www.washington.edu/doit/accessible-web-design <br>
+                            Mozilla Corporation. (n.d.). Semantics - MDN web docs glossary: Definitions of web-related terms: MDN. MDN Web Docs Glossary: Definitions of Web-related terms | MDN. Retrieved March 20, 2023, from https://developer.mozilla.org/en-US/docs/Glossary/Semantics <br>
+                            Sapega, M. (2022, May 11). The history of Digital Accessibility and why it matters. TPGi. Retrieved March 20, 2023, from https://www.tpgi.com/the-history-of-digital-accessibility-and-why-it-matters/ 
+                        </p>
+                    </footer>
+                    <footer class="a11ylist">
+                        <h3 class="a11ytitle">
+                            Further Reading
+                        </h3>
+                        <nav class="a11yindent">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">MDN Documentation - Accessibility<br></a>
+                            <a href="https://www.youtube.com/watch?v=dK2yrh3T4Uw">TPGi - The History of Digital Accessibility<br></a>
+                            <a href="https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=111">W3C - How to Meet Web Content Accessibility Guidelines (Quick Reference)</a>
+                        </nav>
+                    </footer>
+                </article>
+            </main>
+
+            <footer>
+                <p>
+                    <small>
+                        Trans rights are human rights | © 2023 by 
+                        <a href="contact.php">Chloe Foster</a>, All Rights Reserved | 
+                        <a id="html-checker" href="https://validator.w3.org/nu/?doc=http://web-students.net/site48/it161/">Check HTML</a> | 
+                        <a id="css-checker" href="https://jigsaw.w3.org/css-validator/validator?uri=http://web-students.net/site48/it161/">Check CSS</a>
+                    </small>
+                </p>
+            </footer>
+        </div>
+            
+        <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+            
+        <script>
+        //https://tinyurl.com/dynamic-html-checker
+        document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+            
+        document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+
+        //manages mobile nav 
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }   
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+/* CSS just to make this website a bit nicer on the eyes*/
+
+.a11ylist {
+    text-align: left;
+}
+
+.a11yindent {
+    margin: 1em 1em;
+}
+
+.a11ytitle {
+    margin-left: 1em;
+    text-align: left;
+    padding-left: 0;
+}
