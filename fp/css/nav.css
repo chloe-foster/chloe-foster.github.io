@@ -1,0 +1,101 @@
+/* Global rules */
+.nav {
+    margin: auto;
+    /*background-color: rgb(218, 218, 218);*/
+    overflow: auto;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: rgb(180, 170, 124);
+    text-align: left;
+    padding: 12px 12px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+
+    border-width: 0 0 0px 5px;
+    border-style: solid;
+    border-color: rgb(196, 196, 196);
+}
+
+.nav a.hover, a.active {
+    border-width: 2px 0px 2px 5px;
+    border-color: rgb(255, 79, 79);
+    background-color:rgb(100, 66, 66);
+    background-image: linear-gradient(to right, rgb(100, 66, 66) , #2b2b2b);
+}
+
+.nav .icon {
+    display: none;
+}
+
+/* Responsive rules - apply when screen width is less than 1200px */
+
+@media screen and (max-width: 1199px) {
+    .sidebar {
+        float: left;
+    }
+    .sidebar .flexible {
+        display:none;
+    }
+    .sidebar .nav {
+        max-width: 100%;
+        width: 100%;
+        background-color: #2b2b2bbe;
+    }
+    .sidebar .nav .active {
+        background-image: linear-gradient(to right, rgb(100, 66, 66) , #2b2b2bbe);
+    }
+    .wrapper {
+        float:left;
+    }
+
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    
+    .nav a.icon {
+        float: left;
+        display: block;
+    }
+    
+    .nav.responsive {
+        position: relative;
+    }
+    
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    .nav {
+        width: 81%;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    .nav {
+        width: 91%;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    .nav {
+        width: 100%;
+    }
+}
